@@ -8,19 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: TicTacToeViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            GameView()
+                .tabItem {
+                    Label("Play", systemImage: "grid")
+                }
+            SettingsView()
+                .tabItem{
+                    Label("Settings", systemImage: "gear")
+                }
         }
-        .padding()
+        .overlay(alignment: .topLeading) {
+            if !viewModel.wcSessionGood {
+                Image(systemName: "applewatch.slash")
+                    .foregroundColor(.red)
+                    .padding(.top, 20)
+                    .padding(.leading)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ContentView()
+        return ContentView().environmentObject(TicTacToeViewModel.previewVictory)
     }
 }

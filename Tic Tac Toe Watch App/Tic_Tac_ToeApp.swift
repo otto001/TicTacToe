@@ -1,6 +1,6 @@
 //
 //  Tic_Tac_ToeApp.swift
-//  Tic Tac Toe Watch App
+//  Tic Tac Toe WatchKit Extension
 //
 //  Created by Matteo Ludwig on 30.11.22.
 //
@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct Tic_Tac_Toe_Watch_AppApp: App {
+struct Tic_Tac_ToeApp: App {
+    var viewModel = TicTacToeViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView().environmentObject(viewModel)
+            }
         }
     }
 }

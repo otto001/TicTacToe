@@ -16,6 +16,14 @@
 		020AFBBA293788D500703ED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBB9293788D500703ED8 /* ContentView.swift */; };
 		020AFBBC293788D600703ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020AFBBB293788D600703ED8 /* Assets.xcassets */; };
 		020AFBBF293788D600703ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020AFBBE293788D600703ED8 /* Preview Assets.xcassets */; };
+		020AFBCA29378A4F00703ED8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBC929378A4F00703ED8 /* ViewModel.swift */; };
+		020AFBCD29378D0500703ED8 /* TicTacToeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBCC29378D0500703ED8 /* TicTacToeGridView.swift */; };
+		020AFBCE29378E0500703ED8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBC929378A4F00703ED8 /* ViewModel.swift */; };
+		020AFBCF29378E0800703ED8 /* TicTacToeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBCC29378D0500703ED8 /* TicTacToeGridView.swift */; };
+		020AFBD129379A2700703ED8 /* GameFinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBD029379A2600703ED8 /* GameFinishedView.swift */; };
+		020AFBD229379A2700703ED8 /* GameFinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBD029379A2600703ED8 /* GameFinishedView.swift */; };
+		020AFBD429379CED00703ED8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBD329379CED00703ED8 /* GameView.swift */; };
+		020AFBD629379E0B00703ED8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AFBD529379E0B00703ED8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,11 @@
 		020AFBB9293788D500703ED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		020AFBBB293788D600703ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		020AFBBE293788D600703ED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		020AFBC929378A4F00703ED8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		020AFBCC29378D0500703ED8 /* TicTacToeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGridView.swift; sourceTree = "<group>"; };
+		020AFBD029379A2600703ED8 /* GameFinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinishedView.swift; sourceTree = "<group>"; };
+		020AFBD329379CED00703ED8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		020AFBD529379E0B00703ED8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +89,7 @@
 		020AFB99293788D300703ED8 = {
 			isa = PBXGroup;
 			children = (
+				020AFBCB29378CE500703ED8 /* Shared */,
 				020AFBA4293788D400703ED8 /* Tic Tac Toe */,
 				020AFBB6293788D500703ED8 /* Tic Tac Toe Watch App */,
 				020AFBA3293788D400703ED8 /* Products */,
@@ -95,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				020AFBA5293788D400703ED8 /* Tic_Tac_ToeApp.swift */,
+				020AFBD329379CED00703ED8 /* GameView.swift */,
+				020AFBD529379E0B00703ED8 /* SettingsView.swift */,
 				020AFBA7293788D400703ED8 /* ContentView.swift */,
 				020AFBA9293788D500703ED8 /* Assets.xcassets */,
 				020AFBAB293788D500703ED8 /* Preview Content */,
@@ -127,6 +143,16 @@
 				020AFBBE293788D600703ED8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		020AFBCB29378CE500703ED8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				020AFBC929378A4F00703ED8 /* ViewModel.swift */,
+				020AFBCC29378D0500703ED8 /* TicTacToeGridView.swift */,
+				020AFBD029379A2600703ED8 /* GameFinishedView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020AFBD629379E0B00703ED8 /* SettingsView.swift in Sources */,
+				020AFBCF29378E0800703ED8 /* TicTacToeGridView.swift in Sources */,
 				020AFBA8293788D400703ED8 /* ContentView.swift in Sources */,
+				020AFBCE29378E0500703ED8 /* ViewModel.swift in Sources */,
+				020AFBD129379A2700703ED8 /* GameFinishedView.swift in Sources */,
+				020AFBD429379CED00703ED8 /* GameView.swift in Sources */,
 				020AFBA6293788D400703ED8 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020AFBCD29378D0500703ED8 /* TicTacToeGridView.swift in Sources */,
 				020AFBBA293788D500703ED8 /* ContentView.swift in Sources */,
+				020AFBCA29378A4F00703ED8 /* ViewModel.swift in Sources */,
+				020AFBD229379A2700703ED8 /* GameFinishedView.swift in Sources */,
 				020AFBB8293788D500703ED8 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +413,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "de.mludwig.Tic-Tac-Toe";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +426,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -409,6 +444,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "de.mludwig.Tic-Tac-Toe";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +458,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
